@@ -1,5 +1,3 @@
-import pandas as pd
-
 from crypto_algo_lab.data.loader import OHLCVRequest
 
 
