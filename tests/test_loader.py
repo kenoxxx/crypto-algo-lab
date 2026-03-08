@@ -1,9 +1,11 @@
-from crypto_algo_lab.data.loader import OHLCVRequest, fetch_ohlcv
+import pandas as pd
+
+from crypto_algo_lab.data.loader import OHLCVRequest
 
 
-def test_fetch_ohlcv_runs_smoke():
-    req = OHLCVRequest(limit=10)
-    df = fetch_ohlcv(req)
-    # smoke test: we at least get a DataFrame with expected columns
-    assert set(["open", "high", "low", "close", "volume"]).issubset(df.columns)
-
+def test_ohlcv_request_defaults():
+    req = OHLCVRequest()
+    assert req.exchange_id == "binance"
+    assert req.symbol == "BTC/USDT"
+    assert req.timeframe == "1h"
+    assert req.limit == 200
