@@ -2,36 +2,4 @@
   <img src="https://raw.githubusercontent.com/kenoxxx/crypto-algo-lab/main/.github/assets/baner.png" alt="crypto-algo-lab" width="80%">
 </p>
 
-<p align="center">
-  <b>Open-source framework for researching, backtesting and running crypto trading strategies.</b>
-</p>
-
-<p align="center">
-  <a href="https://github.com/kenoxxx/crypto-algo-lab/actions">
-    <img src="https://github.com/kenoxxx/crypto-algo-lab/actions/workflows/tests.yml/badge.svg" alt="CI status">
-  </a>
-  <a href="https://github.com/kenoxxx/crypto-algo-lab/blob/main/LICENSE.txt">
-    <img src="https://img.shields.io/github/license/kenoxxx/crypto-algo-lab.svg" alt="License">
-  </a>
-  <a href="https://github.com/kenoxxx/crypto-algo-lab/stargazers">
-    <img src="https://img.shields.io/github/stars/kenoxxx/crypto-algo-lab.svg?style=social" alt="GitHub stars">
-  </a>
-</p>
-
----
-
-## ✨ What is this?
-
-`crypto-algo-lab` is a small Python framework to quickly go from idea → backtest → simple live crypto bot.[page:5]  
-It gives you ready blocks for OHLCV data loading, strategies and backtests, so you write less glue code.[page:5]  
-
----
-
-## ⚡ Quick start
-
-```bash
-git clone https://github.com/kenoxxx/crypto-algo-lab.git
-cd crypto-algo-lab
-
-pip install -e .
-pytest
+`crypto-algo-lab` is a small open-source Python framework for researching, backtesting and running crypto trading strategies. It helps you go from a trading idea to a backtest and then to a simple live bot with minimal boilerplate, giving you ready-made building blocks for OHLCV data loading via `ccxt`, strategy logic and a backtest engine. You clone the repo, install it in editable mode, run the tests to ensure the environment is fine, and then start experimenting with example strategies or your own. A typical flow is to fetch historical candles for a symbol and timeframe, connect them to a strategy that implements your entry and exit rules, and run a backtest to see equity, PnL and risk metrics. The project includes a `fetch_ohlcv` helper that returns a clean pandas DataFrame with timestamps and `open`, `high`, `low`, `close`, `volume`, so you can plug it into notebooks or into the built-in backtest runner. If you want more structure, the GitHub Wiki explains how the data loader works, how to write strategies in a reusable way, and how CI tests are organized to keep everything stable. The framework is designed to be minimal but extensible, so you can gradually turn your research code into something closer to production if you wish. Contributions, ideas and pull requests are welcome, and the code is distributed under the MIT license, which allows both personal and commercial use.
