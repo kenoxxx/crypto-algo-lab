@@ -22,8 +22,8 @@
 
 ## ✨ What is crypto-algo-lab?
 
-`crypto-algo-lab` is a Python framework for traders and quants who want to turn crypto ideas into numbers fast.[page:5]  
-It gives you ready-made pieces for OHLCV data loading via `ccxt`, a backtest engine, and a clean place for your strategy logic.[page:1][page:3][page:5]  
+`crypto-algo-lab` is a Python framework for traders and quants who want to turn crypto ideas into numbers fast.  
+It gives you ready-made pieces for OHLCV data loading via `ccxt`, a backtest engine, and a clean place for your strategy logic.  
 
 You can:
 
@@ -64,15 +64,15 @@ engine = BacktestEngine(strategy=strategy, data=df)
 
 results = engine.run()
 print(results.summary())
-The data loader uses ccxt and returns a tidy pandas DataFrame with timestamps and open, high, low, close, volume, ready for indicators and research.[page:1][page:3]
+The data loader uses ccxt and returns a tidy pandas DataFrame with timestamps and open, high, low, close, volume, ready for indicators and research.
 
 📚 Learn more
-📈 Data loader: https://github.com/kenoxxx/crypto-algo-lab/wiki/Data-loader[page:3]
+📈 Data loader: https://github.com/kenoxxx/crypto-algo-lab/wiki/Data-loader
 
-♟ Strategies: https://github.com/kenoxxx/crypto-algo-lab/wiki/Strategies[page:3]
+♟ Strategies: https://github.com/kenoxxx/crypto-algo-lab/wiki/Strategies
 
-✅ CI & tests: https://github.com/kenoxxx/crypto-algo-lab/wiki/CI-&-Tests[page:4]
+✅ CI & tests: https://github.com/kenoxxx/crypto-algo-lab/wiki/CI-&-Tests
 
 🤝 Contributing & 📜 License
-Contributions (ideas, issues, PRs) are welcome.[page:5]
-MIT license — see LICENSE.txt.[page:5]
+Contributions (ideas, issues, PRs) are welcome.
+MIT license — see LICENSE.txt.
