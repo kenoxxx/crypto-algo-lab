@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kenoxxx/crypto-algo-lab/main/.github/assets/baner.png" alt="crypto-algo-lab" width="80%">
+  <img src=".github/assets/baner.png" alt="crypto-algo-lab" width="80%">
 </p>
 
 <p align="center">
@@ -22,14 +22,14 @@
 
 ## ✨ What is crypto-algo-lab?
 
-`crypto-algo-lab` is a Python playground for crypto traders and quants: a small, clean framework to go from “idea” → “backtest” → “simple live bot”.[page:5]  
-You get ready-made bricks for OHLCV data loading via `ccxt`, a backtest engine and a clear place for your strategy code, so you spend time on edge, not on wiring.[page:1][page:3][page:5]  
+`crypto-algo-lab` is a Python framework for traders and quants who want to turn crypto ideas into numbers fast.[page:5]  
+It gives you ready-made pieces for OHLCV data loading via `ccxt`, a backtest engine, and a clean place for your strategy logic.[page:1][page:3][page:5]  
 
-Use it if you want:
+You can:
 
-- ⚙️ To fetch exchange candles in one line and get a tidy pandas DataFrame.
-- 📈 To run repeatable backtests across symbols and timeframes.
-- 🚀 To have a minimal structure that can grow into real bots.
+- ⚙️ Fetch historical candles from multiple exchanges in one line.
+- 📈 Run repeatable backtests across symbols and timeframes.
+- 🚀 Use the same structure later as a base for simple live bots.
 
 ---
 
@@ -64,7 +64,7 @@ engine = BacktestEngine(strategy=strategy, data=df)
 
 results = engine.run()
 print(results.summary())
-The data loader uses ccxt and returns a clean pandas DataFrame with timestamps and open, high, low, close, volume, ready for indicators and research.[page:1][page:3]
+The data loader uses ccxt and returns a tidy pandas DataFrame with timestamps and open, high, low, close, volume, ready for indicators and research.[page:1][page:3]
 
 📚 Learn more
 📈 Data loader: https://github.com/kenoxxx/crypto-algo-lab/wiki/Data-loader[page:3]
