@@ -41,38 +41,3 @@ cd crypto-algo-lab
 
 pip install -e .
 pytest
-Run an example strategy:
-
-bash
-python examples/basic_strategy.py
-📊 From data to backtest
-python
-from crypto_algo_lab.data.loader import fetch_ohlcv
-from crypto_algo_lab.strategy.example import ExampleStrategy
-from crypto_algo_lab.backtest.engine import BacktestEngine
-
-df = fetch_ohlcv(
-    exchange_id="binance",
-    symbol="BTC/USDT",
-    timeframe="1h",
-    start="2024-01-01",
-    end="2024-02-01",
-)
-
-strategy = ExampleStrategy(symbol="BTC/USDT", timeframe="1h")
-engine = BacktestEngine(strategy=strategy, data=df)
-
-results = engine.run()
-print(results.summary())
-The data loader uses ccxt and returns a tidy pandas DataFrame with timestamps and open, high, low, close, volume, ready for indicators and research.
-
-📚 Learn more
-📈 Data loader: https://github.com/kenoxxx/crypto-algo-lab/wiki/Data-loader
-
-♟ Strategies: https://github.com/kenoxxx/crypto-algo-lab/wiki/Strategies
-
-✅ CI & tests: https://github.com/kenoxxx/crypto-algo-lab/wiki/CI-&-Tests
-
-🤝 Contributing & 📜 License
-Contributions (ideas, issues, PRs) are welcome.
-MIT license — see LICENSE.txt.
