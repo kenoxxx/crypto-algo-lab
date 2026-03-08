@@ -1,22 +1,4 @@
-<p align="center">
-  <img src=".github/assets/baner.png" alt="crypto-algo-lab" width="80%">
-</p>
-
-<p align="center">
-  <b>Turn crypto trading ideas into real backtests and bots — without drowning in boilerplate.</b>
-</p>
-
-<p align="center">
-  <a href="https://github.com/kenoxxx/crypto-algo-lab/actions">
-    <img src="https://github.com/kenoxxx/crypto-algo-lab/actions/workflows/tests.yml/badge.svg" alt="CI status">
-  </a>
-  <a href="https://github.com/kenoxxx/crypto-algo-lab/blob/main/LICENSE.txt">
-    <img src="https://img.shields.io/github/license/kenoxxx/crypto-algo-lab.svg" alt="License">
-  </a>
-  <a href="https://github.com/kenoxxx/crypto-algo-lab/stargazers">
-    <img src="https://img.shields.io/github/stars/kenoxxx/crypto-algo-lab.svg?style=social" alt="GitHub stars">
-  </a>
-</p>
+![crypto-algo-lab banner](https://raw.githubusercontent.com/kenoxxx/crypto-algo-lab/main/.github/assets/baner.png)
 
 ---
 
